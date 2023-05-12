@@ -4,8 +4,29 @@ const pc = newPlayableCharacter(100, 110)
 // Create a non-playable character
 const npc = newNonPlayableCharacter(50, 300)
 
-// have the NPC start walking east immediately
+let randomNum = (Math.random() *1000)
 async function moveNPC(){
+    await npc.walkNorth(randomNum)
+    await npc.walkEast(randomNum)
+    await npc.walkSouth(randomNum)
+    await npc.walkEast(randomNum)
+    await npc.walkSouth(randomNum)
+    await npc.walkWest(randomNum)
+    npc.walkNorth(randomNum)
+}
+moveNPC()
+
+/*for random direction coding:
+    function get randomDirection(){
+    let randomIndex = Math.range(Math.random() - 3);
+    Math.floor;
+}
+
+randomIndex = [walkEast, walkWest, walkSouth]
+*/ 
+
+// have the NPC start walking east immediately
+/* async function moveNPC(){
     await npc.walkNorth(1400)
     await npc.walkEast(1200)
     await npc.walkSouth(300)
@@ -15,6 +36,7 @@ async function moveNPC(){
     npc.walkNorth(400)
 }
 moveNPC()
+*/
 
 // Create the inventory
 const inventory = newInventory()
