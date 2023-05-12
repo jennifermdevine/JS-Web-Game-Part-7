@@ -13,6 +13,7 @@ async function moveNPC(){
     await npc.walkSouth(randomNum)
     await npc.walkWest(randomNum)
     npc.walkNorth(randomNum)
+    // moveNPC()
 }
 moveNPC()
 
