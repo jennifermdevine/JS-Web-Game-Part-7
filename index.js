@@ -18,8 +18,7 @@ moveNPC()
 
 /*for random direction coding:
     function get randomDirection(){
-    let randomIndex = Math.range(Math.random() - 3);
-    Math.floor;
+    let randomIndex = Math.floor(3 - Math.random());
 }
 
 randomIndex = [walkEast, walkWest, walkSouth]
